@@ -1,0 +1,66 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials.json
+
+# Dependencies
+node_modules/
+*.tsbuildinfo
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime
+data/
+deploy/state/
+.cache/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Backups / experiments (不公开)
+*.bak
+*.bak.*
+src.bak.*
+package.json.bak.*
+*.backup
+
+# Big data files (用 git lfs 或外部)
+*.traineddata
+*.gguf
+*.bin
+*.safetensors
+
+# Local config
+ccr.log
+
+# 补充：扩展备份文件模式
+*.bak-*
+*.bak.*
+*-pre-*.bak
+*.ts.bak*
+*.ts.bak-*
+*.mjs.bak*
+*.js.bak*
+**/*.bak*
+**/*.bak-*
+**/src.bak.*
+**/src.prepre*
+**/src.pre*
+src.prepre-*
+src.pre-*
+
+# 临时脚本
+/tmp/*
